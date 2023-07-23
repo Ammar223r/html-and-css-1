@@ -1,0 +1,93 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 7000px;
+}
+/* .parent {
+    background-color: gold;
+    padding: 10px;
+    height: 500px;
+    display: flex;
+
+
+}
+.parent div {
+    padding: 10px;
+    margin: 10px;
+    width: 150px;
+}
+.item1{
+    background-color: blue;
+    order: 2;
+    align-self: flex-start;
+    flex: 2 200px;
+}
+.item2 {
+    background-color: green;
+    order:4 ;
+    align-self: flex-start;
+    flex: 2 100px;
+}
+.item3 {
+    background-color: red;
+    order: 3;
+    align-self: flex-end;
+    flex: 1 20px;
+}
+.item4 {
+    background-color: violet;
+    order: 1;
+    align-self: flex-end;
+    flex: 1 300px;
+} */
+/* .container {
+   display: grid;
+   grid-auto-rows: minmax(150px,auto);
+   grid-template-areas:
+   "head head head head head head"
+   "sl sl nav nav nav nav"
+   "sl sl cont cont cont cont"
+   "sl sl cont cont cont cont"
+   "sl sl cont cont cont cont"
+   "footer footer footer footer footer footer"
+   ;
+   grid-gap: 10px;
+}
+.box {
+    background-color: #aaa;
+    color: white;
+    text-align: center;
+}
+.head {  
+    grid-area: head;
+}
+.nav {  
+    grid-area: nav;
+}
+.sideleft {  
+    grid-area: sl;
+}
+.content {  
+    grid-area: cont;
+}
+.footer {  
+    grid-area: footer;
+} */
+div {
+    width: 400px;
+    height: 200px;
+    background-color: #eee;
+    margin: 20px auto;
+    padding: 10px;
+    position: relative;
+}
+div::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    background-color: red;
+    height: 5px;
+    background-image: linear-gradient(to right, #E91E63 20%,green 20% ,#83ff88 40%, #F44336 40%, #ff7f75 60%,#009688 60%, #9afff6 80%, #2ae 80%, #2ae );
+}
